@@ -17,7 +17,7 @@ def run_llm(query: str, chat_history: List[Dict[str, Any]] = []):
     embeddings = OpenAIEmbeddings()
     llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, streaming=True)
     vectorstore = PineconeVectorStore(
-        index_name=os.environ["INDEX_NAME"], embedding=embeddings )
+        index_name=os.environ["cocktail"], embedding=embeddings )
     retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
     
     rephrase_prompt = hub.pull("langchain-ai/chat-langchain-rephrase")

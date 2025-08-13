@@ -24,5 +24,5 @@ if __name__ == '__main__':
     embeddings = OpenAIEmbeddings(openai_api_key=os.environ.get("OPEN_API_KEY"))
     #embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     
-    PineconeVectorStore.from_documents(documents, embeddings, index_name=os.environ['INDEX_NAME'])
+    PineconeVectorStore.from_documents(documents, embeddings, index_name=os.environ['cocktail'])
     print("Finish!")
