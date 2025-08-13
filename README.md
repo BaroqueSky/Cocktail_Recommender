@@ -1,6 +1,8 @@
 #  經典調酒推薦機器人
 
-使用 LangChain + Pinecone 的檢索增強生成（RAG）範例。  支援聊天歷史（history-aware rephrase），可即時推薦一款經典調酒並附上該款調酒特色與口感。
+使用 LangChain + Pinecone 的檢索增強生成（RAG）範例。
+
+支援聊天歷史（history-aware rephrase），可即時推薦一款經典調酒並附上該款調酒特色與口感。
 
 ## 功能
 - 向量檢索：Pinecone + OpenAI Embeddings
